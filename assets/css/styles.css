@@ -1090,6 +1090,79 @@ img {
     bottom: 0;
 }
 
+/*==================== AWARDS & PRIZES ====================*/
+.awards__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.awards__content {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.awards__content:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.awards__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: var(--mb-1);
+    object-fit: cover;
+}
+
+.awards__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+    font-weight: var(--font-medium);
+}
+
+.awards__subtitle {
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.awards__description {
+    font-size: var(--smaller-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.awards__link {
+    font-size: var(--small-font-size);
+    display: inline-flex;
+    align-items: center;
+    color: var(--first-color);
+    column-gap: 0.25rem;
+}
+
+.awards__link:hover {
+    text-decoration: underline;
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .awards__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .awards__container {
+        grid-template-columns: 1fr;
+    }
+}
+
 /*==================== CONTACT ME ====================*/
 .contact__container {
     /* grid-template-columns: 40% 60%; */
@@ -1120,7 +1193,7 @@ img {
 }
 
 .contact__title {
-    font-size: var(--h3-font-size);
+    font-size: var(--h4-font-size);
     font-weight: var(--font-medium);
 }
 
@@ -1593,4 +1666,178 @@ img {
 
 .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #4070F4;
+    }
+
+    50% {
+        color: #FF6B6B;
+    }
+
+    100% {
+        color: #4070F4;
+    }
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* @keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+} */
+
+.fadeInUp {
+    animation: fadeInUp 1s ease-out;
+}
+
+.colorChange {
+    animation: colorChange 4s infinite;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+.slideInLeft {
+    animation: slideInLeft 1s ease-out;
+}
+
+.slideInRight {
+    animation: slideInRight 1s ease-out;
+}
+
+.rotate {
+    animation: rotate 10s linear infinite;
+}
+
+.pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.section__title {
+    animation: fadeInUp 1s ease-out;
+}
+
+.section__subtitle {
+    animation: colorChange 4s infinite;
+}
+
+.home__title .auto-type {
+    animation: colorChange 4s infinite;
+}
+
+.home__scroll-mouse {
+    animation: bounce 2s infinite;
+}
+
+.skills__title,
+.qualification__title,
+.services__title,
+.portfolio__title {
+    animation: fadeInUp 1s ease-out;
+}
+
+.home__social-icon {
+    animation: slideInLeft 1s ease-out;
+}
+
+.home__img {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.home__blob {
+    animation: rotate 20s linear infinite;
+}
+
+.nav__logo {
+    animation: colorChange 4s infinite;
+}
+
+.button {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.portfolio__img {
+    transition: transform 0.3s ease;
+}
+
+.portfolio__img:hover {
+    transform: scale(1.05);
+}
+
+.services__modal {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.footer__social {
+    transition: transform 0.3s ease;
+}
+
+.footer__social:hover {
+    transform: translateY(-5px);
 }

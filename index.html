@@ -172,9 +172,7 @@
                         I am a seasoned software engineer with over 4 years of professional experience in the tech
                         industry. My journey in coding and software development began in 2017, and since then, I have
                         successfully designed and developed a wide range of software solutions, including websites,
-                        applications, and games. My deep passion for technology drives me to continually refine my
-                        skills and stay at the forefront of the industry. Beyond my technical expertise, I also enjoy
-                        playing badminton, connecting with friends, and exploring new places through travel.
+                        applications, and games.
                     </p>
 
 
@@ -582,7 +580,7 @@
                             <div>
                                 <h3 class="qualification__title">Founder / Leader</h3>
                                 <span class="qualification__subtitle">
-                                    Techtack (Freelance)
+                                    TechAI (Freelance)
                                 </span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i> 02/2022 - Present
@@ -590,6 +588,39 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== AWARDS & PRIZES ====================-->
+        <section class="awards section" id="awards">
+            <h2 class="section__title">Awards & Prizes</h2>
+            <span class="section__subtitle">Recognition for Excellence</span>
+
+            <div class="awards__container container grid">
+                <div class="awards__content">
+                    <img src="assets/img/prizes/fpt-edu-hackathon.jpeg" alt="National Coding Competition 2023"
+                        class="awards__img">
+                    <h3 class="awards__title">First Prize</h3>
+                    <span class="awards__subtitle">FPT Edu Hackathon Nationwide Competition 2024</span>
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7227492044485615616/"
+                        class="awards__link">Learn More <i class="uil uil-arrow-right"></i></a>
+                </div>
+
+                <div class="awards__content">
+                    <img src="assets/img/prizes/hackayouth.jpeg" alt="Tech Innovators Hackathon 2022"
+                        class="awards__img">
+                    <h3 class="awards__title">The First Runner-up</h3>
+                    <span class="awards__subtitle">"Fintech" Challenge by Infina HackaYouth 2023</span>
+                    <a href="#" class="awards__link">Learn More <i class="uil uil-arrow-right"></i></a>
+                </div>
+
+                <div class="awards__content">
+                    <img src="/api/placeholder/150/150" alt="FPT University Outstanding Student Award"
+                        class="awards__img">
+                    <h3 class="awards__title">The First Prize</h3>
+                    <span class="awards__subtitle">National Greenwich Coding Challenge for Senior Group 2022</span>
+                    <a href="#" class="awards__link">Read More <i class="uil uil-arrow-right"></i></a>
                 </div>
             </div>
         </section>
@@ -1104,6 +1135,42 @@
     <a href="#" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
+
+    <script>
+        // Add animation classes to elements after page load
+        document.addEventListener('DOMContentLoaded', function () {
+            const fadeInUpElements = document.querySelectorAll('.section__title, .section__subtitle, .skills__title, .qualification__title, .services__title, .portfolio__title');
+            fadeInUpElements.forEach(element => {
+                element.classList.add('fadeInUp');
+            });
+
+            const slideInLeftElements = document.querySelectorAll('.home__social-icon');
+            slideInLeftElements.forEach((element, index) => {
+                element.style.animationDelay = `${index * 0.2}s`;
+                element.classList.add('slideInLeft');
+            });
+
+            const portfolioItems = document.querySelectorAll('.portfolio__content');
+            portfolioItems.forEach((item, index) => {
+                item.style.animationDelay = `${index * 0.2}s`;
+                item.classList.add(index % 2 === 0 ? 'slideInLeft' : 'slideInRight');
+            });
+
+            // Intersection Observer for animating elements when they come into view
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fadeInUp');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.skills__content, .qualification__data, .services__content').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
 
     <!--==================== TYPED JS ====================-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
