@@ -1,0 +1,123 @@
+---
+import { Image } from 'astro:assets';
+---
+
+<section id="services" class="container py-24">
+  <div class="flex flex-col items-center gap-4 text-center">
+    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Services</h2>
+    <p class="text-gray-500 md:text-xl dark:text-gray-400">What I offer</p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+    <!-- UI/UX Design -->
+    <div class="group relative overflow-hidden rounded-lg bg-card p-8 hover:shadow-lg transition-shadow">
+      <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+      <div class="relative">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-primary mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+        </svg>
+        <h3 class="text-xl font-bold mb-4">UI/UX Design</h3>
+        <ul class="space-y-2 text-gray-500 dark:text-gray-400">
+          <li class="flex items-center">
+            <svg class="w-4 h-4 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            User Interface Design
+          </li>
+          <li class="flex items-center">
+            <svg class="w-4 h-4 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            User Experience Design
+          </li>
+          <li class="flex items-center">
+            <svg class="w-4 h-4 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Responsive Design
+          </li>
+          <li class="flex items-center">
+            <svg class="w-4 h-4 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Brand Identity
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Web Development -->
+    <div class="group relative overflow-hidden rounded-lg bg-card p-8 hover:shadow-lg transition-shadow">
+      <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+      <div class="relative">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-primary mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+        </svg>
+        <h3 class="text-xl font-bold mb-4">Web Development</h3>
+        <ul class="space-y-2 text-gray-500 dark:text-gray-400">
+          <li class="flex items-center">
+            <svg class="w-4 h-4 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Frontend Development
+          </li>
+          <li class="flex items-center">
+            <svg class="w-4 h-4 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Backend Development
+          </li>
+          <li class="flex items-center">
+            <svg class="w-4 h-4 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            API Development
+          </li>
+          <li class="flex items-center">
+            <svg class="w-4 h-4 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Database Design
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Mobile Development -->
+    <div class="group relative overflow-hidden rounded-lg bg-card p-8 hover:shadow-lg transition-shadow">
+      <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+      <div class="relative">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-primary mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+        </svg>
+        <h3 class="text-xl font-bold mb-4">Mobile Development</h3>
+        <ul class="space-y-2 text-gray-500 dark:text-gray-400">
+          <li class="flex items-center">
+            <svg class="w-4 h-4 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            iOS Development
+          </li>
+          <li class="flex items-center">
+            <svg class="w-4 h-4 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Android Development
+          </li>
+          <li class="flex items-center">
+            <svg class="w-4 h-4 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Cross-platform Apps
+          </li>
+          <li class="flex items-center">
+            <svg class="w-4 h-4 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            App Maintenance
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

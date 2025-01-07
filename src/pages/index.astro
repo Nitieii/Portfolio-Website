@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Skills from '../components/Skills.astro';
+import Services from '../components/Services.astro';
+import Portfolio from '../components/Portfolio.astro';
+import Background3D from '../components/Background3D.astro';
+import Qualification from '../components/Qualification.astro';
+---
+
+<Layout title="Tuan Anh - Fullstack Software Engineer">
+  <Background3D />
+  <Header />
+  <main class="flex flex-col pt-14">
+    <Hero />
+    <About />
+    <Skills />
+    <Qualification />
+    <Services />
+    <Portfolio />
+  </main>
+</Layout>

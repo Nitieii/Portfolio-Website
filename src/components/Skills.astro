@@ -1,0 +1,379 @@
+---
+import { Image } from 'astro:assets';
+---
+
+<section id="skills" class="container relative py-24">
+  <!-- Decorative Elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <!-- Animated circles -->
+    <div
+      class="absolute top-1/4 left-10 w-64 h-64 bg-gradient-to-br from-primary/20 to-primary/5 rounded-full mix-blend-multiply filter blur-xl animate-blob"
+    >
+    </div>
+    <div
+      class="absolute top-1/3 right-10 w-64 h-64 bg-gradient-to-br from-primary/30 to-primary/10 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"
+    >
+    </div>
+    <div
+      class="absolute bottom-1/4 left-20 w-64 h-64 bg-gradient-to-br from-primary/20 to-primary/5 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"
+    >
+    </div>
+
+    <!-- Geometric shapes -->
+    <div
+      class="absolute top-20 left-1/4 w-8 h-8 border-2 border-primary/30 rounded-lg rotate-45 animate-float"
+    >
+    </div>
+    <div
+      class="absolute bottom-32 right-1/4 w-6 h-6 border-2 border-primary/30 animate-float animation-delay-2000"
+    >
+    </div>
+    <div
+      class="absolute top-1/2 right-20 w-4 h-4 bg-primary/20 rounded-full animate-float animation-delay-1000"
+    >
+    </div>
+  </div>
+
+  <div class="flex flex-col items-center gap-4 text-center opacity-0 animate-on-scroll relative z-10">
+    <div class="inline-flex items-center justify-center px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+      Technical Proficiency
+    </div>
+    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50">
+      Skills & Expertise
+    </h2>
+    <p class="text-gray-500 md:text-xl dark:text-gray-400 max-w-[700px]">
+      Mastering cutting-edge technologies and development practices to create innovative solutions
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 relative z-10">
+    <!-- Core Skills -->
+    <div class="group p-6 bg-gradient-to-br from-card/50 to-card rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 opacity-0 animate-on-scroll delay-200 hover:scale-105 hover:-translate-y-1">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="p-3 rounded-lg bg-gradient-to-br from-primary/20 to-primary/5 text-primary group-hover:scale-110 transition-transform duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg group-hover:text-primary transition-colors">Core Skills</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Key Expertise</p>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="relative group/skill">
+          <div class="flex justify-between mb-1">
+            <span class="text-sm font-medium group-hover/skill:text-primary transition-colors">Entrepreneurship</span>
+            <span class="text-sm text-primary opacity-0 group-hover/skill:opacity-100 transition-opacity">95%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700 overflow-hidden">
+            <div class="bg-gradient-to-r from-primary to-primary/80 h-2 rounded-full transition-all duration-1000 transform origin-left hover:scale-x-105" style="width: 0%" data-width="95%"></div>
+          </div>
+          <div class="mt-1 text-xs text-gray-500 dark:text-gray-400 opacity-0 group-hover/skill:opacity-100 transition-opacity">
+            Business Strategy • Innovation • Leadership
+          </div>
+        </div>
+        <div class="relative group/skill">
+          <div class="flex justify-between mb-1">
+            <span class="text-sm font-medium group-hover/skill:text-primary transition-colors">Machine Learning</span>
+            <span class="text-sm text-primary opacity-0 group-hover/skill:opacity-100 transition-opacity">90%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700 overflow-hidden">
+            <div class="bg-gradient-to-r from-primary to-primary/80 h-2 rounded-full transition-all duration-1000 transform origin-left hover:scale-x-105" style="width: 0%" data-width="90%"></div>
+          </div>
+          <div class="mt-1 text-xs text-gray-500 dark:text-gray-400 opacity-0 group-hover/skill:opacity-100 transition-opacity">
+            Deep Learning • NLP • Computer Vision
+          </div>
+        </div>
+        <div class="relative group/skill">
+          <div class="flex justify-between mb-1">
+            <span class="text-sm font-medium group-hover/skill:text-primary transition-colors">Full-Stack Development</span>
+            <span class="text-sm text-primary opacity-0 group-hover/skill:opacity-100 transition-opacity">90%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700 overflow-hidden">
+            <div class="bg-gradient-to-r from-primary to-primary/80 h-2 rounded-full transition-all duration-1000 transform origin-left hover:scale-x-105" style="width: 0%" data-width="90%"></div>
+          </div>
+          <div class="mt-1 text-xs text-gray-500 dark:text-gray-400 opacity-0 group-hover/skill:opacity-100 transition-opacity">
+            Frontend • Backend • DevOps
+          </div>
+        </div>
+      </div>
+      <!-- Decorative corner elements -->
+      <div class="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-primary/30 rounded-tl-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+      <div class="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-primary/30 rounded-br-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="group p-6 bg-gradient-to-br from-card/50 to-card rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 opacity-0 animate-on-scroll delay-400 hover:scale-105 hover:-translate-y-1">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="p-3 rounded-lg bg-gradient-to-br from-primary/20 to-primary/5 text-primary group-hover:scale-110 transition-transform duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg group-hover:text-primary transition-colors">Technical Skills</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Development & Cloud</p>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="relative group/skill">
+          <div class="flex justify-between mb-1">
+            <span class="text-sm font-medium group-hover/skill:text-primary transition-colors">Cloud Computing</span>
+            <span class="text-sm text-primary opacity-0 group-hover/skill:opacity-100 transition-opacity">85%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700 overflow-hidden">
+            <div class="bg-gradient-to-r from-primary to-primary/80 h-2 rounded-full transition-all duration-1000 transform origin-left hover:scale-x-105" style="width: 0%" data-width="85%"></div>
+          </div>
+          <div class="mt-1 text-xs text-gray-500 dark:text-gray-400 opacity-0 group-hover/skill:opacity-100 transition-opacity">
+            AWS • GCP • Azure • Kubernetes
+          </div>
+        </div>
+        <div class="relative group/skill">
+          <div class="flex justify-between mb-1">
+            <span class="text-sm font-medium group-hover/skill:text-primary transition-colors">Software Architecture</span>
+            <span class="text-sm text-primary opacity-0 group-hover/skill:opacity-100 transition-opacity">85%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700 overflow-hidden">
+            <div class="bg-gradient-to-r from-primary to-primary/80 h-2 rounded-full transition-all duration-1000 transform origin-left hover:scale-x-105" style="width: 0%" data-width="85%"></div>
+          </div>
+          <div class="mt-1 text-xs text-gray-500 dark:text-gray-400 opacity-0 group-hover/skill:opacity-100 transition-opacity">
+            Microservices • System Design • Scalability
+          </div>
+        </div>
+        <div class="relative group/skill">
+          <div class="flex justify-between mb-1">
+            <span class="text-sm font-medium group-hover/skill:text-primary transition-colors">UI/UX Design</span>
+            <span class="text-sm text-primary opacity-0 group-hover/skill:opacity-100 transition-opacity">80%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700 overflow-hidden">
+            <div class="bg-gradient-to-r from-primary to-primary/80 h-2 rounded-full transition-all duration-1000 transform origin-left hover:scale-x-105" style="width: 0%" data-width="80%"></div>
+          </div>
+          <div class="mt-1 text-xs text-gray-500 dark:text-gray-400 opacity-0 group-hover/skill:opacity-100 transition-opacity">
+            User Research • Wireframing • Prototyping
+          </div>
+        </div>
+      </div>
+      <!-- Decorative corner elements -->
+      <div class="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-primary/30 rounded-tl-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+      <div class="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-primary/30 rounded-br-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    </div>
+
+    <!-- Database -->
+    <div class="group p-6 bg-gradient-to-br from-card/50 to-card rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 opacity-0 animate-on-scroll delay-600 hover:scale-105 hover:-translate-y-1">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="p-3 rounded-lg bg-gradient-to-br from-primary/20 to-primary/5 text-primary group-hover:scale-110 transition-transform duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2 1.5 3 3.5 3h9c2 0 3.5-1 3.5-3V7c0-2-1.5-3-3.5-3h-9C5.5 4 4 5 4 7z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h8" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg group-hover:text-primary transition-colors">Database</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400">4+ years</p>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="relative group/skill">
+          <div class="flex justify-between mb-1">
+            <span class="text-sm font-medium group-hover/skill:text-primary transition-colors">MongoDB</span>
+            <span class="text-sm text-primary opacity-0 group-hover/skill:opacity-100 transition-opacity">90%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700 overflow-hidden">
+            <div class="bg-gradient-to-r from-primary to-primary/80 h-2 rounded-full transition-all duration-1000 transform origin-left hover:scale-x-105" style="width: 0%" data-width="90%"></div>
+          </div>
+          <div class="mt-1 text-xs text-gray-500 dark:text-gray-400 opacity-0 group-hover/skill:opacity-100 transition-opacity">
+            Schema Design • Aggregation • Indexing
+          </div>
+        </div>
+        <div class="relative group/skill">
+          <div class="flex justify-between mb-1">
+            <span class="text-sm font-medium group-hover/skill:text-primary transition-colors">PostgreSQL</span>
+            <span class="text-sm text-primary opacity-0 group-hover/skill:opacity-100 transition-opacity">85%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700 overflow-hidden">
+            <div class="bg-gradient-to-r from-primary to-primary/80 h-2 rounded-full transition-all duration-1000 transform origin-left hover:scale-x-105" style="width: 0%" data-width="85%"></div>
+          </div>
+          <div class="mt-1 text-xs text-gray-500 dark:text-gray-400 opacity-0 group-hover/skill:opacity-100 transition-opacity">
+            Query Optimization • ACID • Replication
+          </div>
+        </div>
+        <div class="relative group/skill">
+          <div class="flex justify-between mb-1">
+            <span class="text-sm font-medium group-hover/skill:text-primary transition-colors">Redis</span>
+            <span class="text-sm text-primary opacity-0 group-hover/skill:opacity-100 transition-opacity">80%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700 overflow-hidden">
+            <div class="bg-gradient-to-r from-primary to-primary/80 h-2 rounded-full transition-all duration-1000 transform origin-left hover:scale-x-105" style="width: 0%" data-width="80%"></div>
+          </div>
+          <div class="mt-1 text-xs text-gray-500 dark:text-gray-400 opacity-0 group-hover/skill:opacity-100 transition-opacity">
+            Caching • Pub/Sub • Data Structures
+          </div>
+        </div>
+      </div>
+      <!-- Decorative corner elements -->
+      <div class="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-primary/30 rounded-tl-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+      <div class="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-primary/30 rounded-br-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    </div>
+
+    <!-- Design Tools -->
+    <div class="group p-6 bg-gradient-to-br from-card/50 to-card rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 opacity-0 animate-on-scroll delay-800 hover:scale-105 hover:-translate-y-1">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="p-3 rounded-lg bg-gradient-to-br from-primary/20 to-primary/5 text-primary group-hover:scale-110 transition-transform duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg group-hover:text-primary transition-colors">Design Tools</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400">2+ years</p>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="relative group/skill">
+          <div class="flex justify-between mb-1">
+            <span class="text-sm font-medium group-hover/skill:text-primary transition-colors">Figma</span>
+            <span class="text-sm text-primary opacity-0 group-hover/skill:opacity-100 transition-opacity">85%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700 overflow-hidden">
+            <div class="bg-gradient-to-r from-primary to-primary/80 h-2 rounded-full transition-all duration-1000 transform origin-left hover:scale-x-105" style="width: 0%" data-width="85%"></div>
+          </div>
+          <div class="mt-1 text-xs text-gray-500 dark:text-gray-400 opacity-0 group-hover/skill:opacity-100 transition-opacity">
+            UI Design • Components • Prototyping
+          </div>
+        </div>
+        <div class="relative group/skill">
+          <div class="flex justify-between mb-1">
+            <span class="text-sm font-medium group-hover/skill:text-primary transition-colors">Adobe XD</span>
+            <span class="text-sm text-primary opacity-0 group-hover/skill:opacity-100 transition-opacity">75%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700 overflow-hidden">
+            <div class="bg-gradient-to-r from-primary to-primary/80 h-2 rounded-full transition-all duration-1000 transform origin-left hover:scale-x-105" style="width: 0%" data-width="75%"></div>
+          </div>
+          <div class="mt-1 text-xs text-gray-500 dark:text-gray-400 opacity-0 group-hover/skill:opacity-100 transition-opacity">
+            Wireframing • Design Systems • Animation
+          </div>
+        </div>
+        <div class="relative group/skill">
+          <div class="flex justify-between mb-1">
+            <span class="text-sm font-medium group-hover/skill:text-primary transition-colors">Sketch</span>
+            <span class="text-sm text-primary opacity-0 group-hover/skill:opacity-100 transition-opacity">70%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700 overflow-hidden">
+            <div class="bg-gradient-to-r from-primary to-primary/80 h-2 rounded-full transition-all duration-1000 transform origin-left hover:scale-x-105" style="width: 0%" data-width="70%"></div>
+          </div>
+          <div class="mt-1 text-xs text-gray-500 dark:text-gray-400 opacity-0 group-hover/skill:opacity-100 transition-opacity">
+            Vector Graphics • Symbols • Libraries
+          </div>
+        </div>
+      </div>
+      <!-- Decorative corner elements -->
+      <div class="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-primary/30 rounded-tl-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+      <div class="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-primary/30 rounded-br-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    </div>
+  </div>
+
+  <!-- Tech Stack Icons -->
+  <div class="mt-16 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center justify-center opacity-0 animate-on-scroll delay-1000">
+    <img src="/img/programming-icons/react.svg" alt="React" class="w-12 h-12 mx-auto filter grayscale hover:filter-none transition-all duration-300 hover:scale-110" />
+    <img src="/img/programming-icons/node.svg" alt="Node.js" class="w-12 h-12 mx-auto filter grayscale hover:filter-none transition-all duration-300 hover:scale-110" />
+    <img src="/img/programming-icons/python.svg" alt="Python" class="w-12 h-12 mx-auto filter grayscale hover:filter-none transition-all duration-300 hover:scale-110" />
+    <img src="/img/programming-icons/go.svg" alt="Go" class="w-12 h-12 mx-auto filter grayscale hover:filter-none transition-all duration-300 hover:scale-110" />
+    <img src="/img/programming-icons/java.svg" alt="Java" class="w-12 h-12 mx-auto filter grayscale hover:filter-none transition-all duration-300 hover:scale-110" />
+    <img src="/img/programming-icons/figma.svg" alt="Figma" class="w-12 h-12 mx-auto filter grayscale hover:filter-none transition-all duration-300 hover:scale-110" />
+    <img src="/img/programming-icons/aws.svg" alt="AWS" class="w-12 h-12 mx-auto filter grayscale hover:filter-none transition-all duration-300 hover:scale-110" />
+    <img src="/img/programming-icons/docker.svg" alt="Docker" class="w-12 h-12 mx-auto filter grayscale hover:filter-none transition-all duration-300 hover:scale-110" />
+  </div>
+</section>
+
+<style>
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-10px) rotate(5deg);
+    }
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+  }
+
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+
+  .group:hover .group-hover\:scale-110 {
+    transform: scale(1.1);
+  }
+
+  .group:hover .group-hover\:-translate-y-1 {
+    transform: translateY(-0.25rem);
+  }
+</style>
+
+<script>
+  function handleIntersection(entries: IntersectionObserverEntry[]) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-on-scroll');
+
+        // Animate skill bars
+        const skillBars = entry.target.querySelectorAll('[data-width]');
+        skillBars.forEach((bar: Element) => {
+          const width = (bar as HTMLElement).dataset.width;
+          if (width) {
+            setTimeout(() => {
+              (bar as HTMLElement).style.width = width;
+            }, 200);
+          }
+        });
+
+        observer.unobserve(entry.target);
+      }
+    });
+  }
+
+  const observer = new IntersectionObserver(handleIntersection, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  });
+
+  document.querySelectorAll('.opacity-0').forEach((element) => {
+    observer.observe(element);
+  });
+</script>

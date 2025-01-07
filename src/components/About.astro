@@ -1,0 +1,188 @@
+---
+import { Image } from 'astro:assets';
+import { ScrollAnimation } from './ScrollAnimation';
+---
+
+<section id="about" class="container relative py-24">
+  <!-- Decorative Elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <!-- Animated circles -->
+    <div
+      class="absolute top-1/4 right-10 w-64 h-64 bg-primary/5 rounded-full mix-blend-multiply filter blur-xl animate-blob"
+    >
+    </div>
+    <div
+      class="absolute bottom-1/3 left-10 w-64 h-64 bg-primary/10 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"
+    >
+    </div>
+
+    <!-- Geometric shapes -->
+    <div
+      class="absolute top-20 right-1/4 w-8 h-8 border-2 border-primary/30 rounded-lg rotate-45 animate-float"
+    >
+    </div>
+    <div
+      class="absolute bottom-32 left-1/4 w-6 h-6 border-2 border-primary/30 animate-float animation-delay-2000"
+    >
+    </div>
+  </div>
+
+  <div class="flex flex-col items-center gap-4 text-center opacity-0 animate-on-scroll relative z-10">
+    <div class="inline-flex items-center justify-center px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-2">
+      Professional Overview
+    </div>
+    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50">
+      Expertise & Experience
+    </h2>
+    <p class="text-gray-500 md:text-xl dark:text-gray-400 max-w-[600px]">Specialized in building scalable solutions and innovative digital experiences</p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16 relative z-10">
+    <div class="relative w-full max-w-[400px] aspect-square group opacity-0 animate-on-scroll-left delay-200 mx-auto">
+      <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 animate-pulse -z-10"></div>
+      <div class="relative overflow-hidden rounded-2xl border-2 border-primary/20 h-full">
+        <img
+          src="/img/about.jpg"
+          alt="About me"
+          class="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110"
+        />
+        <!-- Decorative corner elements -->
+        <div class="absolute top-0 left-0 w-12 h-12 border-t-4 border-l-4 border-primary/30 rounded-tl-2xl"></div>
+        <div class="absolute bottom-0 right-0 w-12 h-12 border-b-4 border-r-4 border-primary/30 rounded-br-2xl"></div>
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-center">
+      <p class="text-gray-500 dark:text-gray-400 mb-8 opacity-0 animate-on-scroll-right delay-200 leading-relaxed">
+        As a Full-stack Developer and Co-founder of TECHTACK, I specialize in developing enterprise-level applications
+        and AI-driven solutions. With expertise in cloud architecture and modern development frameworks,
+        I've successfully led multiple projects from conception to deployment. My focus areas include
+        distributed systems, AI integration, and building scalable microservices architectures.
+      </p>
+
+      <div class="grid grid-cols-3 gap-4 mb-8">
+        <div class="relative group text-center p-6 rounded-xl bg-gradient-to-br from-primary/10 to-transparent backdrop-blur-sm opacity-0 animate-scale delay-400 hover:transform hover:scale-105 transition-transform duration-300">
+          <span class="block text-3xl font-bold text-primary mb-1">
+            <span class="number" data-target="4" data-suffix="+">0</span>
+          </span>
+          <span class="text-sm text-gray-500 dark:text-gray-400">Years of Enterprise Experience</span>
+          <div class="absolute inset-0 border border-primary/20 rounded-xl"></div>
+        </div>
+        <div class="relative group text-center p-6 rounded-xl bg-gradient-to-br from-primary/10 to-transparent backdrop-blur-sm opacity-0 animate-scale delay-500 hover:transform hover:scale-105 transition-transform duration-300">
+          <span class="block text-3xl font-bold text-primary mb-1">
+            <span class="number" data-target="30" data-suffix="+">0</span>
+          </span>
+          <span class="text-sm text-gray-500 dark:text-gray-400">Enterprise Projects</span>
+          <div class="absolute inset-0 border border-primary/20 rounded-xl"></div>
+        </div>
+        <div class="relative group text-center p-6 rounded-xl bg-gradient-to-br from-primary/10 to-transparent backdrop-blur-sm opacity-0 animate-scale delay-600 hover:transform hover:scale-105 transition-transform duration-300">
+          <span class="block text-3xl font-bold text-primary mb-1">
+            <span class="number" data-target="12" data-suffix="+">0</span>
+          </span>
+          <span class="text-sm text-gray-500 dark:text-gray-400">Tech Stack Proficiencies</span>
+          <div class="absolute inset-0 border border-primary/20 rounded-xl"></div>
+        </div>
+      </div>
+
+      <a
+        href="/pdf/Resume.pdf"
+        download
+        class="group inline-flex h-12 items-center justify-center rounded-full bg-gradient-to-r from-primary to-primary/80 px-8 text-sm font-medium text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:shadow-xl hover:shadow-primary/30 hover:transform hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50 w-fit opacity-0 animate-on-scroll delay-600"
+      >
+        View Full Resume
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2 transform transition-transform group-hover:translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-10px) rotate(5deg);
+    }
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+  }
+
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+</style>
+
+<script>
+  function handleIntersection(entries: IntersectionObserverEntry[]) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-on-scroll', 'animate-on-scroll-left', 'animate-on-scroll-right', 'animate-scale');
+
+        // Start number animation if the element contains numbers
+        const numbers = entry.target.querySelectorAll('.number');
+        numbers.forEach(animateNumber);
+
+        observer.unobserve(entry.target);
+      }
+    });
+  }
+
+  function animateNumber(element: Element) {
+    const target = parseInt(element.getAttribute('data-target') || '0');
+    const suffix = element.getAttribute('data-suffix') || '';
+    const duration = 2000; // Animation duration in milliseconds
+    const steps = 50; // Number of steps in the animation
+    const stepValue = target / steps;
+    let current = 0;
+
+    const updateNumber = () => {
+      current += stepValue;
+      if (current < target) {
+        element.textContent = Math.floor(current) + suffix;
+        requestAnimationFrame(updateNumber);
+      } else {
+        element.textContent = target + suffix;
+      }
+    };
+
+    requestAnimationFrame(updateNumber);
+  }
+
+  const observer = new IntersectionObserver(handleIntersection, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  });
+
+  document.querySelectorAll('.opacity-0').forEach((element) => {
+    observer.observe(element);
+  });
+</script>
